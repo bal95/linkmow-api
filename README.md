@@ -1,4 +1,4 @@
-## ENV file configuration:
+## ENV file configuration
 Before deploying, create a .env file in the root directory with the following fields:
 ```
 ACCESS_KEY_ID = 
