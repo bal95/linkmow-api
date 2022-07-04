@@ -13,9 +13,9 @@ functions:
   serverAPI:
     handler: handler.serverAPI
     environment:
-      ACCESS_KEY_ID : AKIA2XM6MCNNPGX3K47U
-      SECRET_ACCESS_KEY : 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
-      DEFAULT_REGION : us-east-1
+      ACCESS_KEY_ID : 
+      SECRET_ACCESS_KEY : 
+      DEFAULT_REGION : 
     events:
       - httpApi:
           path: /{proxy+}
