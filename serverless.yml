@@ -1,0 +1,24 @@
+service: linkmow-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  memorySize: 2048
+  stage: prod
+  timeout: 10
+  region: us-east-1
+
+functions:
+  serverAPI:
+    handler: handler.serverAPI
+    environment:
+      ACCESS_KEY_ID : AKIA2XM6MCNNPGX3K47U
+      SECRET_ACCESS_KEY : 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
+      DEFAULT_REGION : us-east-1
+    events:
+      - httpApi:
+          path: /{proxy+}
+          method: any
+
+configValidationMode: error
